@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Clicker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="progress-container">
+            <div class="valueClick">
+                <h1>Количество $: </h1>
+                <h1 id="valueClick">0</h1>
+            </div>
+            <div class="pointPerSecond">
+                <h3>$ в секунду: </h3>
+                <h3 id="pointPerSecond">1</h3>
+            </div>
+            <button class="btnClick" onclick="addClick()">
+                <div class="btnContainer">
+                    <p id="btnValue">0</p>
+                    <img src="coin.png" alt="">
+                </div>
+            </button>
+        </div>
+
+        <div class="upgradeBlock">
+            <div class="btnUpgradeClick-container">
+                <h1 class="headerUpgrade">Улучшения клика</h1>
+                <div class="btnUpgradeClick">
+                    <button class="upgrade" onclick="addOneClickValue()">Добавить +1 к клику за 30$</button>
+                    <button class="upgrade" onclick="addTwoClickValue()">Добавить +2 к клику за 100$</button>
+                    <button class="upgrade" onclick="addFiveClickValue()">Добавить +5 к клику за 300$</button>
+                    <button class="upgrade" onclick="addTenClickValue()">Добавить +10 к клику за 1000$</button>
+                    <button class="upgrade" onclick="addTwentyClickValue()">Добавить +20 к клику за 2200$</button>
+                    <button class="upgrade" onclick="addFiftyClickValue()">Добавить +50 к клику за 5500$</button>
+                </div>
+            </div>
+
+            <div class="btnUpgradePPS-container">
+                <h1 class="headerUpgrade">Улучшение пассивного дохода</h1>
+                <div class="btnUpgradePPS">
+                    <button class="upgrade" onclick="addOnePointInSecond()">Добавить +1/s за 90$</button>
+                    <button class="upgrade" onclick="addTwoPointInSecond()">Добавить +2/s за 300$</button>
+                    <button class="upgrade" onclick="addFivePointInSecond()">Добавить +5/s за 900$</button>
+                    <button class="upgrade" onclick="addTenPointInSecond()">Добавить +10/s за 3000$</button>
+                    <button class="upgrade" onclick="addTwentyPointInSecond()">Добавить +20/s за 6600$</button>
+                    <button class="upgrade" onclick="addFiftyPointInSecond()">Добавить +50/s за 16500$</button>
+                </div>
+            </div>
+        </div>
+        <button class="deleteProgress" onclick="deleteProgress()">
+            Удалить прогресс
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

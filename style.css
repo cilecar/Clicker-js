@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(24 24 27);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1, h3 {
+    color: white;
+}
+
+.headerUpgrade {
+    font-size: larger;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.valueClick, .pointPerSecond {
+    display: flex;
+}
+
+#valueClick, #pointPerSecond {
+    margin: 0 0 0 5px;
+}
+
+.btnClick {
+    width: 70%;
+    background-color: gold;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.btnClick img {
+    width: 20%;
+}
+
+#btnValue {
+    font-size: 30px;
+    align-self: center;
+    width: max-content;
+}
+
+.btnClick:active {
+    background-color: rgb(211, 179, 0);
+}
+
+.upgrade, .deleteProgress {
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    background-color: rgb(224, 224, 224);
+}
+
+.upgrade:active, .deleteProgress:active {
+    background-color: rgb(167, 167, 167);
+}
+
+.deleteProgress {
+    margin-top: 20px;
+    width: 90%;
+    background-color: red;
+    color: white;
+}
+
+.btnUpgradeClick, .btnUpgradePPS {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.upgradeBlock {
+    display: flex;
+    gap: 30px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.btnUpgradePPS-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.btnUpgradeClick-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.upgradeType {
+    display: flex;
+    background-color: gray;
+    border-radius: 8px;
+    padding-left: 12px;
+}
+
+.upgradeType>p {
+    align-self: center;
+    width: 100%;
+}
+
+@media (max-width:500px) {
+    .upgradeBlock {
+        display: flex;
+        flex-direction: column;
+    }
+}
